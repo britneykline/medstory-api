@@ -1,0 +1,41 @@
+### Users Index
+GET http://localhost:3000/users 
+
+### Users Create
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "f_name": "test 3",
+  "l_name": "test 3",
+  "email": "test 3",
+  "password": "password",
+  "password_digest": "password"
+}
+
+### Sessions Create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "britney@gmail.com",
+  "password": "password"
+}
+
+### Users Update
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "f_name": "test 3",
+  "l_name": "test 3",
+  "email": "test3",
+  "password": "password1",
+  "password_digest": "password1"
+}
+
+### Vaccines Index
+GET http://localhost:3000/vaccines
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2Mzg1ODUzMDd9.xyA0Gr904TNqeWltK26nGo4LeX7YragHDJF3zMdTqiU
+Content-Type: application/json
+
