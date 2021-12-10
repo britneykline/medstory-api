@@ -5,13 +5,15 @@ class UsersController < ApplicationController
   end
 
   def create
+    p params[:password]
     user = User.new(
       f_name: params[:f_name],
       l_name: params[:l_name],
       email: params[:email],
       password: params[:password],
-      password_digest: params[:password_digest]
+      password_confirmation: params[:password_confirmation]
     )
+    p user.password
     if user.save
       render json: user
     else
