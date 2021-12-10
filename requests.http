@@ -36,18 +36,18 @@ Content-Type: application/json
 
 ### Vaccines Index
 GET http://localhost:3000/vaccines
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2Mzg1ODUzMDd9.xyA0Gr904TNqeWltK26nGo4LeX7YragHDJF3zMdTqiU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2MzkxODM0MjV9.hvOC5Qw-OVhWdcN0cRs_cJaaECHDFskepXklnrkG75Q
 Content-Type: application/json
 
 ### Vaccine Create
 POST http://localhost:3000/vaccines
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2MzkxODM0MjV9.hvOC5Qw-OVhWdcN0cRs_cJaaECHDFskepXklnrkG75Q
 Content-Type: application/json
 
 {
   "title": "pfizer",
   "dose1_date": "2021-jan-01",
   "dose2_date": "2021-jan-22",
-  "vac_image": "n/a",
-  "user_id": "4"
+  "vac_image": "n/a"
 }
 

@@ -14,7 +14,7 @@ class VaccinesController < ApplicationController
       dose1_date: params[:dose1_date],
       dose2_date: params[:dose2_date],
       vac_image: params[:vac_image],
-      user_id: params[:user_id]
+      user_id: current_user.id
     )
     if vaccine.save
       render json: vaccine
