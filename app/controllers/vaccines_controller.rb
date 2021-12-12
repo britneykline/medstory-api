@@ -22,4 +22,9 @@ class VaccinesController < ApplicationController
       render json: {errors: vaccine.errors.full_messages}, status: :unprocessable_entity    
     end
   end 
+  def show
+    the_id = params[:id]
+    vaccine = Vaccine.find_by(user_id: current_user.id)
+    render json: vaccine 
+  end
 end 

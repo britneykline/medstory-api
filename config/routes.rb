@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   patch "/users/:id" => "users#update"
   get "/vaccines" => "vaccines#index"
   post "/vaccines" => "vaccines#create"
+  get "/vaccines/:id" => "vaccines#show"
 
 
 

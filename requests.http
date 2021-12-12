@@ -51,3 +51,5 @@ Content-Type: application/json
   "vac_image": "n/a"
 }
 
+### Vaccine Show
+GET http://localhost:3000/vaccines/5 
