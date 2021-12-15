@@ -53,3 +53,4 @@ Content-Type: application/json
 
 ### Vaccine Show
 GET http://localhost:3000/vaccines/5 
+
