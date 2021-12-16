@@ -24,7 +24,7 @@ class VaccinesController < ApplicationController
   end 
   def show
     the_id = params[:id]
-    vaccine = Vaccine.find_by(user_id: current_user.id)
+    vaccine = Vaccine.where(user_id: current_user.id).order(:id).last
     render json: vaccine 
   end
 end 
